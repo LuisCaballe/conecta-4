@@ -1,0 +1,192 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Space Mono', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #183153;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+button {
+	color: inherit;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+}
+
+.display {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	margin-block: 3em;
+	width: min-content;
+}
+
+.title {
+	font-size: 2rem;
+	display: inline;
+}
+
+.header {
+	margin-bottom: -1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.restart-btn,
+.exit-btn {
+	background-color: #183153;
+	color: white;
+	border: none;
+	width: 2rem;
+	height: 2rem;
+	cursor: pointer;
+	font-size: 1rem;
+}
+
+.underline {
+	border-bottom: solid 4px #183153;
+}
+
+.board {
+	display: flex;
+	border: solid 2px #183153;
+	box-shadow: 10px 10px #183153;
+}
+
+.col {
+	cursor: pointer;
+	padding: 0;
+	border: none;
+	background-color: white;
+}
+
+.cell,
+.turn-cell {
+	width: 8vw;
+	height: 8vw;
+	border: solid 2px #183153;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 40px;
+	min-height: 40px;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.turn-cell {
+	border: solid 4px #183153;
+	background-color: white;
+}
+
+.turn-info {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1em;
+	padding: 1em;
+	margin-top: 10px;
+	background-color: rgba(176, 196, 222, 0.5);
+}
+
+.text-container {
+	width: 75%;
+}
+
+.red-token {
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	background-color: crimson;
+}
+
+.blue-token {
+	width: 75%;
+	height: 75%;
+	border-radius: 50%;
+	background-color: blue;
+}
+
+.center-text {
+	text-align: center;
+}
+
+button[disabled] {
+	cursor: default;
+}
+
+button[disabled] > .cell {
+	border: solid 2px rgba(176, 196, 222, 0.5);
+}
+
+.gray-board {
+	border: solid 2px rgba(176, 196, 222, 0.5);
+	box-shadow: 10px 10px rgba(176, 196, 222, 0.5);
+}
+
+.play-again {
+	display: flex;
+	flex-direction: column;
+}
+
+.accept-button,
+.two-players-btn,
+.one-player-btn {
+	background-color: white;
+	border: solid 4px #183153;
+	font-size: 1.1em;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
+
+.accept-button:hover,
+.two-players-btn:hover,
+.one-player-btn:hover {
+	color: white;
+	background-color: #183153;
+}
+
+.accept-button {
+	margin-top: 1em;
+}
+
+.farewell-box {
+	width: max-content;
+	background-color: white;
+	border: 3px solid;
+	box-shadow: 10px 10px;
+	padding: 40px 40px;
+	text-align: center;
+}
+
+.welcome {
+	border: 4px solid #183153;
+	box-shadow: 10px 10px;
+	padding: 1em 1em 0;
+}
+
+.btn-box {
+	display: flex;
+	margin: 1em 0;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.hidden {
+	display: none;
+}
+
+.center-farewell {
+	height: 100vh;
+	align-items: center;
+}

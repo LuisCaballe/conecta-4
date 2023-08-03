@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Proyecto Conecta 4</title>
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/65dd60c6d7.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<main class="main-container">
+			<section class="display">
+				<header class="header">
+					<h1 class="title">Conecta 4</h1>
+					<nav class="header-nav">
+						<button class="restart-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+						<button class="exit-btn"><b>X</b></button>
+					</nav>
+				</header>
+				<div class="underline"></div>
+				<div class="welcome">
+					<p>Elije el modo de juego:</p>
+					<div class="btn-box">
+						<button class="two-players-btn">Jugador 1 vs Jugador 2</button>
+						<button class="one-player-btn">Jugador 1 vs CPU</button>
+					</div>
+				</div>
+				<div class="board gray-board">
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+					<button class="col" disabled>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</button>
+				</div>
+				<div class="turn-info hidden"></div>
+				<div class="play-again hidden"></div>
+			</section>
+		</main>
+		<script type="module" src="./main.js"></script>
+		<script type="module" src="./modules/cell-status.js"></script>
+	</body>
+</html>
